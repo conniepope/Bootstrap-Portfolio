@@ -46,14 +46,9 @@ p {
     line-height: 1.25em;
  }
 
-div {
-    margin: 0 auto;
-    position: relative;
-}
 
 #main {
     background-color: #ffffff;
-    clear: left;
     border: 2px solid #dddddd;
     padding: 0px 0px 20px 5px;
     margin: 20px auto;
@@ -97,27 +92,22 @@ div {
 }
 
 .port-img {
-    padding: 0px 20px 10px 0px;
-    clear: both;
-    margin-left: 20px;
+ 
+
 }
 
-#second-box, #fourth-box {
-    margin-left: 28px;
-}
-/*portfolio page */
+
+/*portfolio page Sample text boxes */
 h3 {
     display: inline;
     color: white;
     background-color: #4aaaa5;
     float: left;
     padding: 10px 20px;
-    width: 360px;
-    margin: 0px 32px 0px 8px;
+    width: 400px;
     text-align: center;
     position: relative;
     top: -70px;
-    left: 20px;
 }
 
 footer {
@@ -127,10 +117,5 @@ footer {
     font-size: 60%;
     text-align: center;
     padding: 10px 0 1px 0;
-}
-
-figure {
-    background-color: white;
-    width: 100%;
 }
 
