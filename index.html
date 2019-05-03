@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-us">
     <head>
         <meta charset="UTF-8">
@@ -8,87 +8,70 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"> 
     </head>
 
+
     <body>
-        <header>
-            <!-- nav bar from bootstrap -->
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse float-right" id="navbarSupportedContent">
-   
-                        <div class="form-inline my-2 my-lg-0">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Dropdown
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <div class="container" id="main">
-            <div class="row">
-                <div class="col-md-12">
-                <h2 class="main-header" class="font-weight-bold">About Me</h2>
-                </div>
-            </div>
-
-            <div class="row" id="content">
-                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
-                    <img class="float-left" id="me" src="assets/images/me2.jpg" alt="picture of me">
-                </div>
-
-                <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-                    <p>My name is Connie Pope. I am a Web Developer, Web Designer, and Graphic Designer.
-                        I have an Associate Degree in Graphic Design Management from Bradford School in Pittsburgh. 
-                        I am in the process of getting a Certificate in Full-Stack Web Development from University 
-                        of Pennsylvania Penn LPS Boot Camp.
-                    </p>
-                    <p>My computer skills include HTML, CSS, Visual Studio Code, Adobe Photoshop, Adobe InDesign, 
-                        Adobe Illustrator and Microsoft Office. 
-                    </p>
-                    <p>I have worked as a Freelance Web Designer, a Digital and Design Specialist, a Production 
-                        Artist, and a Computer Specialist. My clients have included schools, colleges, 
-                        sports teams, bands, catering companies, printing companies, small businesses, 
-                        magazine publishers, retail stores, health care providers, restaurants, and many more. 
-                        I also have extensive Customer Service experience as well as Management experience. 
-                    </p>
-                    <p>In my free time I like to travel, volunteer, camp, kayak, ski, scuba dive and try new things.
-                    </p>
-                </div>
-            </div>
         
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <h1 id="name">Connie L. Pope</h1>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div class="content">   
+            <main>
+                <h1 class="row" id="main-header">About Me</h1>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <img class="img-fluid" alt="Responsive image" id="me" src="assets/images/me2.jpg" alt="picture of me">
+                    </div>
+
+                    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                        <p>My name is Connie Pope. I am a Web Developer, Web Designer, and Graphic Designer.
+                            I have an Associate Degree in Graphic Design Management from Bradford School in Pittsburgh. 
+                            I am in the process of getting a Certificate in Full-Stack Web Development from University 
+                            of Pennsylvania Penn LPS Boot Camp.
+                        </p>
+                        <p>My computer skills include HTML, CSS, Visual Studio Code, Adobe Photoshop, Adobe InDesign, 
+                            Adobe Illustrator and Microsoft Office. 
+                        </p>
+                        <p>I have worked as a Freelance Web Designer, a Digital and Design Specialist, a Production 
+                            Artist, and a Computer Specialist. My clients have included schools, colleges, 
+                            sports teams, bands, catering companies, printing companies, small businesses, 
+                            magazine publishers, retail stores, health care providers, restaurants, and many more. 
+                            I also have extensive Customer Service experience as well as Management experience. 
+                        </p>
+                        <p>In my free time I like to travel, volunteer, camp, kayak, ski, scuba dive and try new things.
+                        </p>
+                    </div>
+                </div>
+            </main>
         </div>
-    
+
         <footer>
             <p>Copyright@ 2019 Connie L. Pope</p>
         </footer>
-    </body>
+       
+</body>
+
 
 </html>
