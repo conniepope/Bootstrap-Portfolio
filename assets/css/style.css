@@ -1,34 +1,50 @@
-/* can't get the background to NOT overflow past the footer */
+* {
+    box-sizing: border-box;
+}
+
+
 body {
-    font-family: Arial, 'Helvetic Neue', Helvetica, sans-serif;
-    background: url("gravel.png");
     color: #777777;
+    font-family: Arial, 'Helvetic Neue', Helvetica, sans-serif;
+    margin: auto;
 }
 
-header {
-    height: 80px;
-    background-color: white;
-    border-bottom: 2px solid #777777;
-}
-
-h2 {
+h1 {
     background-color: #4aaaa5;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
+}
+
+.navbar {
+    padding: 0;
 }
 
 #name {
-    padding: 20px 20px 20px 20px;
+    float: left;
+    display: inline;
+    padding: 30px 20px 30px 20px;
     margin: 0;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+
+}
 a {
+    padding: 8px;
+    text-decoration: none;
     color: #777777;
-    border-right: 1px solid #dddddd;
 }
 
-a:last-child {
+li {
+    list-style-type: none;
+    border-right: 1px solid #dddddd;
+    display: inline;
+}
+
+li:last-child {
     border-right: none;
 }
 
@@ -36,44 +52,28 @@ a:hover {
     color: #4aaaa5;
 }
 
-nav {
-    height: 78px;
-    width: 960px;
-    margin: 0 auto;
+.content {
+    border-top: 2px solid #777777;
+    background: url("gravel.png");
+    flex: 1 0 auto;
+    overflow: auto;
+    clear: both;
 }
 
-p {
-    line-height: 1.25em;
- }
-
-div {
-    margin: 0 auto;
-    position: relative;
-}
-
-#main {
+main {
     background-color: #ffffff;
-    clear: left;
     border: 2px solid #dddddd;
-    padding: 0px 0px 20px 5px;
+    padding: 0px 20px 0px 20px;
     margin: 20px auto;
-    width: 920px;
+    width: auto;
+    overflow: auto
 }
 
-#content {
-    position: relative;
-    top: 10px;
-}
-.row {
-    padding: 0 15px;
-}
-
-.main-header {
+#main-header {
     background-color: #ffffff;
     color: #4aaaa5;
-    border-bottom: 2px solid #dddddd;
-    padding: 15px 0 0 0;
-    width: 100%;
+    border-bottom: 3px solid #dddddd;
+    padding-left: 20px;
 }
 /* my picture */
 #me {
@@ -81,25 +81,35 @@ div {
     margin-right: 20px;
     overflow: auto;
     margin-bottom: 10px;
+    height: auto;
 }
 
-.form-group, textarea {
+
+form {
+    width: auto;
+}
+
+input[type=text], textarea {
     width: 100%;
-    padding: 0 0 0 15px;
 }
 
-#submit-button {
+input[type=submit] {
     width: 100px;
     background-color: #4aaaa5;
     color: white;
-    margin: 0 15px;
-    border: 0;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
+
+/* portfolio image placeholders. Probably not positioning these correctly
+as when the size is changed on the images, the layout gets messed up and
+the "Sample" text gets all out of alignment also. */
 .port-img {
     padding: 0px 20px 10px 0px;
     clear: both;
     margin-left: 20px;
+    float: left;
 }
 
 #second-box, #fourth-box {
@@ -123,14 +133,13 @@ h3 {
 footer {
     background-color: #666666;
     border-top: 5px #4aaaa5 solid;
+    flex-shrink: 0;
     color: white;
     font-size: 60%;
     text-align: center;
-    padding: 10px 0 1px 0;
+    padding-bottom: 2px;
+    clear: both;
 }
 
-figure {
-    background-color: white;
-    width: 100%;
-}
+
 
