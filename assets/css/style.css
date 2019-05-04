@@ -55,17 +55,13 @@ a:hover {
 .content {
     border-top: 2px solid #777777;
     background: url("gravel.png");
-    flex: 1 0 auto;
-    overflow: auto;
-    clear: both;
 }
 
 main {
     background-color: #ffffff;
     border: 2px solid #dddddd;
     padding: 0px 20px 0px 20px;
-    margin: 20px auto;
-    width: auto;
+    margin: 20px 20px;
     overflow: auto
 }
 
@@ -101,33 +97,25 @@ input[type=submit] {
     margin-bottom: 10px;
 }
 
-
-/* portfolio image placeholders. Probably not positioning these correctly
-as when the size is changed on the images, the layout gets messed up and
-the "Sample" text gets all out of alignment also. */
 .port-img {
-    padding: 0px 20px 10px 0px;
-    clear: both;
-    margin-left: 20px;
     float: left;
+    margin-top: 20px;
 }
 
-#second-box, #fourth-box {
-    margin-left: 28px;
-}
+
+
 /*portfolio page */
 h3 {
-    display: inline;
     color: white;
     background-color: #4aaaa5;
     float: left;
     padding: 10px 20px;
-    width: 360px;
-    margin: 0px 32px 0px 8px;
+    width: 400px;
     text-align: center;
     position: relative;
-    top: -70px;
-    left: 20px;
+    top: -60px;
+    
+
 }
 
 footer {
