@@ -30,12 +30,16 @@ ul {
     margin: 0;
     padding: 0;
     float: right;
-
 }
+
 a {
     padding: 8px;
     text-decoration: none;
     color: #777777;
+}
+
+a:hover {
+    color: #4aaaa5;
 }
 
 li {
@@ -46,10 +50,6 @@ li {
 
 li:last-child {
     border-right: none;
-}
-
-a:hover {
-    color: #4aaaa5;
 }
 
 .content {
@@ -71,6 +71,7 @@ main {
     border-bottom: 3px solid #dddddd;
     padding-left: 20px;
 }
+
 /* my picture */
 #me {
     float: left;
@@ -79,7 +80,6 @@ main {
     margin-bottom: 10px;
     height: auto;
 }
-
 
 form {
     width: auto;
@@ -101,8 +101,6 @@ input[type=submit] {
     float: left;
     margin-top: 20px;
 }
-
-
 
 /*portfolio page */
 h3 {
