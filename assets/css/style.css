@@ -112,10 +112,8 @@ h3 {
     padding: 10px 20px;
     width: 400px;
     text-align: center;
-    position: relative;
-    top: -60px;
-    
-
+    position: absolute;
+    top: 150px;
 }
 
 footer {
